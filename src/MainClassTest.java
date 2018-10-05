@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MainClassTest extends MainClass
@@ -6,11 +7,11 @@ public class MainClassTest extends MainClass
    public void testGetLocalNumber()
    {
       int a = getLocalNumber();
-      if(a != 14){
-         System.out.println("Not equal to 14");
-      } else {
-         System.out.println("Equal to 14");
+      if (a != 14)
+      {
+         Assert.fail("Number is not equal to 14");
       }
+
    }
 
 }
